@@ -1,15 +1,15 @@
 ; Hello World assembly program with NASM
 
-extern _printf
+; extern _printf
+global _main
 
 section .data
-	msg db 'Hello World!', 0Ah ; assign msg variable with your message string
+	msg db 'Hello World!', 0xA ; assign msg variable with your message string
 
 section .text
-global _main
 
 _main:
 	push msg
-	call _printf
+	; call _printf
 	add esp, 4
 	ret
