@@ -3,10 +3,21 @@
 logs/
 *.log
 
+.vscode/
+
 .idea
 *.iml
 
 # Mac
 .DS_Store
 
+*.out
+*.i
+*.s
 *.o
+*.obj
+*.so
+*.a
+*.exe
+*.dll
+*.lib
