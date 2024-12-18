@@ -18,6 +18,17 @@ def hex2bin_write():
             f.write(byte)
 
 
+def dec2DoubleHex():
+    with open("test.bin", "wb") as f:
+        for var in range(256):
+            var = str(var)
+            var = int(var, base=16)
+            b = var.to_bytes(2, byteorder='little')
+            print(b)
+            f.write(b)
+
+
 if __name__ == "__main__":
-    dec2hex()
+    # dec2hex()
     # hex2bin_write()
+    dec2DoubleHex()
